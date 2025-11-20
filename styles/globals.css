@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@config "../tailwind.config.js";
+
+
+@layer components {
+  .app-container {
+    @apply px-4 md:px-10 max-w-7xl mx-auto;
+  }
+
+  .big-text {
+    @apply text-black text-3xl font-bold md:text-5xl
+  }
+
+  .small-text {
+    @apply text-base leading-relaxed text-foreground/90
+  }
+
+  .medium-text {
+    @apply font-sans font-bold text-[21px] md:text-2xl
+  }
+}
