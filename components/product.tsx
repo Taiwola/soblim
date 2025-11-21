@@ -6,7 +6,7 @@ export default function ProductsSection() {
   return (
     <section id="products" className="w-full py-16 bg-light-pink">
       <div className="mx-auto max-w-7xl">
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 px-4">
           <SectionHeader />
           <DesktopProductGrid />
         </div>

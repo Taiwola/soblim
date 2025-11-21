@@ -13,10 +13,10 @@
   }
 
   .small-text {
-    @apply text-base leading-relaxed text-foreground/90
+    @apply text-xs md:text-base leading-relaxed text-foreground/90
   }
 
   .medium-text {
-    @apply font-sans font-bold text-[21px] md:text-2xl
+    @apply font-sans font-bold text-base md:text-[21px] md:text-2xl
   }
 }

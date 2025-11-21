@@ -5,7 +5,7 @@ import { statCardData } from "@/config/site";
 export default function Trusts() {
   return (
     <section className="w-full py-16">
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-7xl px-4">
         <div className="flex md:flex-row flex-col-reverse md:gap-18 gap-6">
           <div className="relative max-w-[600px] ">
             <Image

@@ -5,7 +5,7 @@ import { Input, Textarea } from "@heroui/input";
 export default function ContactUs() {
   return (
     <section className="w-full py-16">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="flex gap-5 md:gap-0 md:justify-between flex-col md:flex-row">
           <div className="flex flex-col gap-6 w-full">
             <h1 className="big-text">Get in Touch</h1>

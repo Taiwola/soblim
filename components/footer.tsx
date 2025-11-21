@@ -20,7 +20,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-cover bg-right-bottom py-14 md:py-20" style={{ backgroundImage: "url('/images/hero.png')" }}>
-      <div className="container mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-col gap-10 md:gap-12">
           {/* Top Section: Logo + Description + Socials */}
           <div className="flex flex-col md:flex-row md:justify-between gap-8 md:gap-12">

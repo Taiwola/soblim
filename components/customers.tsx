@@ -5,7 +5,7 @@ import { BsStarFill } from "react-icons/bs";
 export default function Customers() {
   return (
     <section className="w-full py-16">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-col gap-6">
           <div className="flex flex-col justify-center items-center text-center gap-6">
             <h1 className="big-text"> What Our Customers Say</h1>
