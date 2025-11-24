@@ -18,7 +18,7 @@ export default function ProductsSection() {
 function SectionHeader() {
   return (
     <div className="flex flex-col gap-6 text-center justify-center items-center mb-8">
-      <h1 className="big-text">Who We Offer</h1>
+      <h1 className="big-text">What We Offer</h1>
       <p className="small-text max-w-3xl">
         Discover our comprehensive range of high-quality products designed to
         meet your everyday needs with excellence and reliability.
