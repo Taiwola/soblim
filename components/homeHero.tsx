@@ -1,6 +1,10 @@
+"use client"
+
 import { FaCircleCheck } from "react-icons/fa6"
 import GradientButton from "../app/_components/gradientButton"
 import { Button } from "@heroui/button"
+import { useState } from "react";
+import OverLay from "./overlay";
 
 const TRUST_BADGE_TEXT = "Trusted by over 10K people";
 const HERO_HEADLINE = "Your Trusted Partner for Quality Products & Services";
@@ -8,6 +12,8 @@ const HERO_SUBHEADING =
   "Delivering high-quality goods and services across Nigeria and Africa — reliable, efficient, and customer-focused.";
 
 export default function HomeHero() {
+  const [openOverlay, setOpenOverlay] = useState<boolean>(false)
+
   return (
     <section className="relative pt-11 md:pt-0 w-full h-[516px] md:h-[726px] bg-cover bg-center z-10 bg-[url('/images/hero.png')]">
       {/* Content Container */}
@@ -34,7 +40,9 @@ export default function HomeHero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col gap-4 sm:flex-row sm:gap-8 pt-4">
-          <GradientButton text="Contact us" />
+          <div>
+          <GradientButton text="Contact us" setOpenOverlay={setOpenOverlay} />
+          </div>
           <Button
             variant="ghost"
             className="rounded-4xl border border-white px-7 py-5 font-sans text-white hover:bg-white/10 transition-colors"
@@ -43,6 +51,13 @@ export default function HomeHero() {
           </Button>
         </div>
       </div>
+      <OverLay openOverlay={openOverlay} setOpenOverlay={setOpenOverlay} />
     </section>
     );
 }
+
+
+
+
+
+

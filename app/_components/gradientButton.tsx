@@ -1,13 +1,22 @@
+"use client"
 import { Button } from "@heroui/button"
+import { Dispatch, SetStateAction } from "react"
 
 
 export default function GradientButton({
   text,
   className,
+  setOpenOverlay
 }: {
   text: string
-  className?: string
+  className?: string,
+  setOpenOverlay?: Dispatch<SetStateAction<boolean>>
 }) {
+  const handleClick = () => {
+    if (setOpenOverlay) {
+      setOpenOverlay(true); // Open the overlay
+    }
+  };
   return (
     <Button
       className={`bg-linear-to-r from-[#F57A20] to-[#F5A460] text-[#FAFAFA] font-sans font-medium text-[16px] rounded-[70px] py-[20px] px-[30px] ${className}`}
@@ -21,6 +30,7 @@ export default function GradientButton({
     `,
       }}
       variant="light"
+      onPress={handleClick}
     >
       {text}
     </Button>

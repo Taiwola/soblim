@@ -39,16 +39,16 @@ export default function Header() {
           ))}
         </ul>
         {/* CTA Button (right) - Desktop only */}
-        <div className="hidden flex-shrink-0 md:flex">
-          <GradientButton text="Contact us" />
-        </div>
+        <Link href={'#brand'} className="hidden flex-shrink-0 md:flex">
+          <GradientButton text="Brand Partner" />
+        </Link>
         {/* Mobile Menu Toggle Button */}
         <button
           className="flex items-center justify-center p-2 md:hidden cursor-pointer"
           aria-label="Open navigation menu"
           onClick={toggleMenu}
         >
-          <Menu size={28} />
+          <Menu size={28} className="text-white"/>
         </button>
       </nav>
       {/* Mobile Drawer Navigation */}

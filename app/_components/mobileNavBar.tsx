@@ -84,9 +84,9 @@ export default function MobileNavBar({
                 </ul>
 
                 {/* CTA Button */}
-                <div className="mt-6 flex justify-center">
-                  <GradientButton text="Contact us" />
-                </div>
+                <Link href={"#brand"} className="mt-6 flex justify-center">
+                  <GradientButton text="Brand Partner" />
+                </Link>
               </DrawerBody>
             </div>
           )}

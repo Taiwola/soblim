@@ -1,7 +1,12 @@
+"use client"
+
 import GradientButton from "@/app/_components/gradientButton";
 import { Button } from "@heroui/button";
+import { useState } from "react";
+import OverLay from "./overlay";
 
 export default function CTA() {
+    const [openOverlay, setOpenOverlay] = useState<boolean>(false)
   return (
     <section className="w-full py-16">
       <div className="max-w-7xl mx-auto">
@@ -15,7 +20,7 @@ export default function CTA() {
               started today and experience the difference.
               </p>
               <div className="flex gap-4">
-                 <GradientButton text="Contact Us" />
+                 <GradientButton text="Contact Us" setOpenOverlay={setOpenOverlay}/>
               <Button
                 variant="ghost"
                 className="border-1 font-sans rounded-4xl text-white py-[20px] px-[30px] transition-all"
@@ -26,6 +31,7 @@ export default function CTA() {
           </div>
         </div>
       </div>
+      <OverLay openOverlay={openOverlay}  setOpenOverlay={setOpenOverlay} />
     </section>
   );
 }
