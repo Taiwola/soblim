@@ -198,14 +198,14 @@ export const partnerImage = [
 ];
 
 export const testimonialData: TestimonialData[] = [
-  {
-    quote:
-      "Exceptional quality and outstanding customer service. Solbim Trading has been our go-to partner for all our product needs.",
-    imageSrc: "/images/customer1.png",
-    imageAlt: "customer 1",
-    name: "Adebayo Johnson",
-    title: "Business Owner",
-  },
+  // {
+  //   quote:
+  //     "Exceptional quality and outstanding customer service. Solbim Trading has been our go-to partner for all our product needs.",
+  //   imageSrc: "/images/customer1.png",
+  //   imageAlt: "customer 1",
+  //   name: "Adebayo Johnson",
+  //   title: "Business Owner",
+  // },
   {
     quote:
       "The reliability and efficiency of their delivery service is unmatched. Highly recommended for any business looking for quality products.",

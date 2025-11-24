@@ -15,7 +15,7 @@ export default function Customers() {
               Trading.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center">
             {testimonialData.map((testimonial, index) => (
               <div
                 className="shadow-lg p-4 border-1 border-white flex flex-col gap-4"

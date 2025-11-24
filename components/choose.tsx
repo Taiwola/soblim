@@ -5,7 +5,7 @@ import { SwiperSlide } from "swiper/react";
 
 export default function Choose() {
   return (
-    <section className="w-full py-16">
+    <section className="w-full py-16 bg-light-pink">
       <div className="mx-auto max-w-7xl px-4">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col items-center justify-center md:flex md:flex-row md:justify-between md:items-center md:text-left text-center">
@@ -19,7 +19,7 @@ export default function Choose() {
             {chooseConfig.map((choose, index) => (
               <div
                 key={index}
-                className="border-b-5 border-[#DB7525] p-8 shadow-lg rounded flex flex-col gap-6 transition-transform hover:scale-105"
+                className="border-b-5 border-[#DB7525] p-8 shadow-lg rounded flex flex-col gap-6 transition-transform hover:scale-105 bg-white"
               >
                 <h1 className="medium-text">{choose.title}</h1>
                 <p className="small-text">{choose.description}</p>
@@ -38,7 +38,7 @@ export default function Choose() {
                 <SwiperSlide key={index}>
                   <div
                     key={index}
-                    className="border-b-5 border-[#DB7525] p-8 shadow-lg h-[160px] md:h-fit rounded flex flex-col gap-6 transition-transform hover:scale-105"
+                    className="border-b-5 border-[#DB7525] p-8 shadow-lg h-[160px] md:h-fit rounded flex flex-col gap-6 transition-transform hover:scale-105 bg-white"
                   >
                     <h1 className="medium-text">{choose.title}</h1>
                     <p className="small-text">{choose.description}</p>
