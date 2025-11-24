@@ -11,11 +11,11 @@ const CTA_LABEL = "Learn More";
 
 export default function About() {
   return (
-    <section id={"company"} aria-labelledby="about-heading" className="w-full py-16">
+    <section id={"company"} aria-labelledby="about-heading" className="w-full py-16 bg-light-pink">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 items-center md:items-center">
           {/* Image first on mobile, text first on desktop */}
-          <div className="order-1 md:order-2 flex justify-center md:justify-end h-[450px]">
+          <div className="order-1 md:order-2 flex justify-center md:justify-end md:h-[450px] h-[350px]">
             <div className="relative max-w-[600px]">
               <Image
                 src="/images/about.png"

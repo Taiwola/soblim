@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <main className="h-full w-full">
       <HomeHero />
-      <About />
       <Product />
+      <About />
       <Choose />
       <Brand />
       <Trusts />
